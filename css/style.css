@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: poppins, Helvetica, sans-serif;
+    background: url(../img/two.jpg) no-repeat center center/cover;
+    min-height: 1400px;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 66, 209, 0.5);
+    z-index: 1;
+    width: 100%;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    padding: 2rem;
+    background-color: rgba(0, 21, 66, 0.897);
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+label {
+    display: block;
+    padding-bottom: 4px;
+}
+
+.form-wrap {
+    padding: 0.8rem 0;
+}
+
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="email"],
+.container input[list],
+.container input[type="submit"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.container input[type="submit"] {
+    background-color: springgreen;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #f4f4f4;
+}
+
+@media screen and (max-width:568px) {
+    .header {
+        font-size: small;
+    }
+    body {
+        min-height: 1500px;
+    }
+    .container {
+        display: block;
+        margin: auto;
+        max-width: 370px;
+        padding: 1rem;
+        background-color: rgba(0, 21, 66, 0.897);
+        color: #fff;
+        margin-top: 2rem;
+    }
+}
